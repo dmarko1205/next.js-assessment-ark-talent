@@ -2,7 +2,9 @@
 
 import React from 'react';
 import { DownloadOutlined, FileTextOutlined, FilterOutlined } from '@ant-design/icons';
-import { Button, Space, Row, Col } from 'antd';
+import { Button, Row, Col } from 'antd';
+import Card from '@/components/Card';
+import ChartContainer from '@/components/Chart';
 
 export default function Home() {
 
@@ -40,10 +42,18 @@ export default function Home() {
 
       <Row gutter={[16,16]} justify="center">
         <Col xs={24}  md={12}>
-          <div>This is left line chart</div>
+          <Card>
+            <ChartContainer>
+              <div>This is Line Chart</div>
+            </ChartContainer>
+          </Card>
         </Col>
         <Col xs={24} md={12}>
-          <div>This is right pie chart</div>
+          <Card>
+            <ChartContainer>
+              <div>This is Pie Chart</div>
+            </ChartContainer>
+          </Card>
         </Col>
       </Row>
 
