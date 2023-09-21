@@ -5,6 +5,8 @@ import { DownloadOutlined, FileTextOutlined, FilterOutlined } from '@ant-design/
 import { Button, Row, Col } from 'antd';
 import Card from '@/components/Card';
 import ChartContainer from '@/components/Chart';
+import { DualAxesComponent } from '@/components/charts/DualAxes';
+import { PieComponent } from '@/components/charts/Pie';
 
 export default function Home() {
 
@@ -44,14 +46,14 @@ export default function Home() {
         <Col xs={24}  md={12}>
           <Card>
             <ChartContainer>
-              <div>This is Line Chart</div>
+              <DualAxesComponent />
             </ChartContainer>
           </Card>
         </Col>
         <Col xs={24} md={12}>
           <Card>
             <ChartContainer>
-              <div>This is Pie Chart</div>
+              <PieComponent />
             </ChartContainer>
           </Card>
         </Col>
